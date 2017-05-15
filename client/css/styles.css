@@ -1,0 +1,28 @@
+body {
+    margin-top: 75px;
+}
+
+.navbar-brand {
+    font-family: comic-sans, cursive, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.blurb {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.blogpost {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.about-image {
+    border: 5px solid black;
+}
+
+/*.create-post{
+    text-align: center;
+}*/

@@ -1,0 +1,6 @@
+<h1>{{ blogpost.title }}</h1>
+<p>{{ blogpost.content }}</p>
+<h5>Post created by {{ blogpost.author }}</h5>
+<h5>Posted at: {{ blogpost.createdAt | date: 'short' }}</h5>
+<button ng-click='editBlogPost()'>edit post</button>  <button ng-click='deleteBlogPost()'>Delete Post</button>
+<p>{{ id }}</p>

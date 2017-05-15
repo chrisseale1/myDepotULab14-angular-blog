@@ -1,0 +1,31 @@
+
+
+<!--<button ng-click="postNewBlogpost"-->
+<div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-4"></div>
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <button class= "create-post" ng-click="goToNewPost()">create new post</button>
+        </div>
+    <div class="col-md-4 col-sm-4 col-xs-4"></div>
+</div>
+<div class="row">
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+    <div class="col-md-8 col-sm-8 col-xs-8">
+        <p class="blurb">This is where the magic happens. You can write your own blogpost by clicking the "create new post" button above. You can create a single post, complete with your thoughts and it will show the date it was made and who authored it, allowing you to later edit the post or just delete it if you feel you're rambling and it all just isn't working out. Or, if you're in more of a reading mood, take a look at some of the past posts below from various blog contributors. There's something for everyone at the Seale Blog.</p>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-2"></div> 
+</div>   
+
+<div class="blogpost" ng-repeat="blogpost in blogposts | orderBy: createdAt: true">
+            <h1>{{ blogpost.title }}</h1>
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+            <h5 class="author">author: {{ blogpost.author }}</h5>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+            <button class="read-post" ng-click='goToPostId(blogpost.id)'>Read Post</button>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+    </div>
+</div>

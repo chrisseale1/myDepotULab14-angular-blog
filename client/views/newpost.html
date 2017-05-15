@@ -1,0 +1,16 @@
+
+<!--Title-->
+
+<div class="row">
+  <div class="col-lg-4">
+    <label for="exampleTextarea">Title</label>
+    <input type="text" class='form-control' placeholder='Enter Post Title' ng-model="blogpost.title">
+  </div>
+</div>
+    <!--actual content form-->
+ <fieldset class="form-group">
+    <label for="exampleTextarea">Write about it!</label>
+    <textarea class="form-control" id="exampleTextarea" placeholder= 'Write your post here' rows="6" ng-model='blogpost.content'></textarea>
+</fieldset>
+<input type="text" class='author-input' placeholder='Author Name' ng-model="blogpost.author">
+<button ng-click="saveBlogPost()">Submit Post</button>
